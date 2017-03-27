@@ -1,5 +1,6 @@
 package fr.ippon.microservices.documentation;
 
+import io.github.robwin.swagger2markup.GroupBy;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -41,7 +42,10 @@ public class DocumentationTest {
     public void convertSwaggerToAsciiDoc() throws Exception {
         this.mockMvc.perform(get(API_DOCS_URL)
                 .accept(MediaType.APPLICATION_JSON))
-                .andDo(Swagger2MarkupResultHandler.outputDirectory(APIDOC_OUTPUT_FOLDER).build())
+                .andDo(Swagger2MarkupResultHandler
+                        .outputDirectory(APIDOC_OUTPUT_FOLDER)
+                        .withPathsGroupedBy(GroupBy.TAGS)
+                        .build())
                 .andExpect(status().isOk());
     }
 }
