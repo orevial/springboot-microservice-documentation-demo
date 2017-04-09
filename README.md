@@ -3,8 +3,8 @@ A sample service demo to show how different documentation systems (Javadoc, manu
 
 ## How-to
 
-To build the application, just run :
+To build the application and generate docs, just run :
 
 ```bash
-mvn clean install
+mvn clean install gitlog:generate asciidoctor:process-asciidoc
 ```

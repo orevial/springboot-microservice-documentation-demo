@@ -1,0 +1,39 @@
+= {project-name}
+:imagesdir: images
+:toclevels: 3
+
+== What is this ?
+
+This project is a simple demo intended for a Bordeaux JUG demo.
+
+image::bordeauxjug-logo.jpg[Bordeaux JUG]
+
+== Examples
+
+This Asciidoc documentation can contain awesome things ! See below...
+
+==== Formatted code
+
+[source,bash]
+----
+mvn clean install
+----
+
+=== File examples from actual source files
+
+[source,yaml,options="nowrap"]
+----
+include::{project-basedir}/src/main/resources/application.yml[]
+----
+
+=== Admonitions
+
+IMPORTANT: An important remark
+
+TIP: You should probably use Asciidoc in your own service
+
+=== Lists
+
+* Item 1
+* Item 2
+* Item 3
