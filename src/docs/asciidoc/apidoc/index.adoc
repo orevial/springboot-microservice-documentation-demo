@@ -1,0 +1,6 @@
+= {project-name} API
+:toclevels: 3
+
+include::apidoc/paths.adoc[]
+
+include::apidoc/definitions.adoc[]

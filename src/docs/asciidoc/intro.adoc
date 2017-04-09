@@ -37,3 +37,9 @@ TIP: You should probably use Asciidoc in your own service
 * Item 1
 * Item 2
 * Item 3
+
+== Specific documentations
+
+* link:javadoc/[Javadoc]
+* link:apidoc/index.html[API Documentation]
+* link:changelog[Changelog]

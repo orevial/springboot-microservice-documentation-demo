@@ -22,3 +22,9 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
+
+# Doc related ignores
+src/docs/asciidoc/changelog.adoc
+src/docs/asciidoc/apidoc/overview.adoc
+src/docs/asciidoc/apidoc/paths.adoc
+src/docs/asciidoc/apidoc/definitions.adoc
