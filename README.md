@@ -6,5 +6,5 @@ A sample service demo to show how different documentation systems (Javadoc, manu
 To build the application and generate docs, just run :
 
 ```bash
-mvn clean install gitlog:generate asciidoctor:process-asciidoc
+mvn clean install gitlog:generate asciidoctor:process-asciidoc package
 ```

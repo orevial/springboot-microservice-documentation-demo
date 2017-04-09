@@ -178,6 +178,29 @@
                     </attributes>
                 </configuration>
             </plugin>
+            <!-- Doc assembly generation plugin -->
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>2.6</version>
+                <configuration>
+                    <descriptor>src/assembly/doc.xml</descriptor>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                        <configuration>
+                            <!-- This is where we use our shared assembly descriptor -->
+                            <!--<descriptorRefs>-->
+                            <!--<descriptorRef>doc</descriptorRef>-->
+                            <!--</descriptorRefs>-->
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 
