@@ -25,6 +25,7 @@
         <asciidoctor.maven.plugin.version>1.5.3</asciidoctor.maven.plugin.version>
         <asciidoctorj.version>1.5.4</asciidoctorj.version>
         <jruby.version>1.7.21</jruby.version>
+        <snippetsDirectory>src/docs/asciidoc/apidoc/generated-snippets</snippetsDirectory>
     </properties>
 
     <dependencies>
@@ -66,6 +67,13 @@
             <groupId>io.springfox</groupId>
             <artifactId>springfox-staticdocs</artifactId>
             <version>2.6.1</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.restdocs</groupId>
+            <artifactId>spring-restdocs-mockmvc</artifactId>
+            <version>1.1.2.RELEASE</version>
             <scope>test</scope>
         </dependency>
 
@@ -164,6 +172,7 @@
                         <idseparator>-</idseparator>
                         <docinfo1>true</docinfo1>
                         <linkcss>true</linkcss>
+                        <snippets>${snippetsDirectory}</snippets>
                         <project-name>${project.name}</project-name>
                         <project-basedir>${project.basedir}</project-basedir>
                     </attributes>

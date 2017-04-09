@@ -28,3 +28,4 @@ src/docs/asciidoc/changelog.adoc
 src/docs/asciidoc/apidoc/overview.adoc
 src/docs/asciidoc/apidoc/paths.adoc
 src/docs/asciidoc/apidoc/definitions.adoc
+src/docs/asciidoc/apidoc/generated-snippets/*
